@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Phobi.AR</title>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
 	<link rel="stylesheet" href="css/estilos.css">
@@ -42,10 +43,6 @@
 				<p><a href="#caracteristicas" class="texto-blanco"><i class="fas fa-chevron-down"></i></a></p>
 			</div>
 
-			<!-- Video -->
-			<!-- <video loop muted data-autoplay class="bg-video">
-				<source src="media/bg-video.m4v" type="video/mp4">
-			</video> -->
 		</header>
 
 		<section class="section productos">
@@ -112,25 +109,33 @@
 
 		<section class="section productos">
 			<article class="slide">				
-				<div class="informacion-producto">
-					<p class="modelo">
-						<span class="texto-naranja">NikeCourt</span> 
-						<span class="texto-negro">Air</span>
-					</p>
-					<model-viewer src="Horse.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" autoplay>
-
-						<div class="progress-bar hide" slot="progress-bar">
-							<div class="update-bar"></div>
-						</div>
-						<button slot="ar-button" id="ar-button">
-							View in your space
-						</button>
-						<div id="ar-prompt">
-							<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-						</div>
-					</model-viewer>
+				
+				<script
+				type="module"
+				src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+			  ></script>
+			  <model-viewer
+				src="/media/Astronaut.glb"
+				
+				camera-controls
+				environment-image="neutral"
+				poster="/media/poster.webp"
+				shadow-intensity="1"
+				auto-rotate
+			  >
+				<div class="progress-bar hide" slot="progress-bar">
+				  <div class="update-bar"></div>
 				</div>
+				<button slot="ar-button" id="ar-button">
+				  View in your space
+				</button>
+				<div id="ar-prompt">
+				  <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
+				</div>
+			  </model-viewer>
 			</article>
+
+
 			<article class="slide">
 				<div class="informacion-producto">
 					<p class="modelo">
