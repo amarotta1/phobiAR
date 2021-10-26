@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
 	<link rel="stylesheet" href="css/estilos.css">
+	<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
 </head>
 <body>
 	<nav class="nav">
@@ -110,29 +111,21 @@
 		<section class="section productos">
 			<article class="slide">				
 				
-				<script
-				type="module"
-				src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-			  ></script>
-			  <model-viewer
-				src="media/Astronaut.glb"
-				
-				camera-controls
-				environment-image="neutral"
-				poster="media/poster.webp"
-				shadow-intensity="1"
-				auto-rotate
-			  >
-				<div class="progress-bar hide" slot="progress-bar">
-				  <div class="update-bar"></div>
-				</div>
-				<button slot="ar-button" id="ar-button">
-				  View in your space
-				</button>
-				<div id="ar-prompt">
-				  <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
-				</div>
-			  </model-viewer>
+			 <!-- <model-viewer> HTML element -->
+				<model-viewer src="media/Horse.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral" poster="media/poster.webp" shadow-intensity="2.9" autoplay>
+					<div class="progress-bar hide" slot="progress-bar">
+						<div class="update-bar"></div>
+					</div>
+					<button slot="ar-button" id="ar-button">
+						View in your space
+					</button>
+					<div id="ar-prompt">
+						<img src="media/ar_hand_prompt.png">
+					</div>
+				  </model-viewer>  
+				  <script src="script.js"></script>
+				  <!-- Loads <model-viewer> for browsers: -->
+				  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 			</article>
 
 
