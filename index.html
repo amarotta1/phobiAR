@@ -163,14 +163,18 @@
 				</model-viewer>
 			</article>
 			<article class="slide">
-				<div class="informacion-producto">
-					<p class="modelo">
-						<span class="texto-naranja">NikeCourt</span> 
-						<span class="texto-negro">Air</span>
-					</p>
-					<p class="descripcion texto-negro">Lorem, ipsum dolor.</p>
-					<p class="precio">2,800</p>
-				</div>
+				<model-viewer bounds="tight" src="media/cat.gltf" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral" poster="media/catposter.webp" shadow-intensity="2.4" autoplay>
+
+					<div class="progress-bar hide" slot="progress-bar">
+						<div class="update-bar"></div>
+					</div>
+					<button slot="ar-button" id="ar-button">
+						View in your space
+					</button>
+					<div id="ar-prompt">
+						<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+					</div>
+				</model-viewer>
 			</article>
 		</section>	
 		
