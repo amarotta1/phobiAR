@@ -56,7 +56,8 @@
 					<br>
 					<p class="descripcion texto-negro">Phobia.Ar es una aplicación móvil de realidad aumentada enfocada en ayudar al terapeuta a realizar terapias de exposición a sus pacientes con fobias a animales o insectos generando modelos virtuales en entornos reales. 
 
-					<br>Creando situaciones de exposición de manera progresiva, a través de 3 o 4 niveles de dificultad, el terapueta puede ir controlando el tratamiento según lo requiera el paciente y grabar la sesión.	
+					<br>Creando situaciones de exposición de manera progresiva, a través de 3 o 4 niveles de dificultad, el terapueta puede ir controlando el tratamiento según lo requiera el paciente.
+					<br>Además la aplicación permite grabar la sesión.	
 					</p>													
 				</div>		
 						
@@ -79,7 +80,7 @@
 						<span class="texto-negro">De valor</span>
 					</p>
 					<p class="descripcion texto-negro">Con esta aplicación se genera un entorno 3D seguro, repetitivo y controlable para que el paciente enfrente sus temores a insectos o animales. 
-						Los modelos 3D interactúan con la realidad logrando obtener una sensación de que el objeto existe y de esa forma el paciente puede enfrentar la ansiedad que le produce la situación.
+						<br>Los modelos 3D interactúan con la realidad logrando obtener una sensación de que el objeto existe y de esa forma el paciente puede enfrentar la ansiedad que le produce la situación.
 					</p>
 					
 				</div>
@@ -90,19 +91,32 @@
 		<section class="section productos" >
 			<article class = "slide">
 				<div class="informacion-producto" >
-					<p class="modelo">
-						<span class="texto-naranja">Valor</span> 
-						<span class="texto-negro">Agregado</span>
-					</p>
-					<p class="descripcion texto-negro"><ul style="list-style :none;"  >
-						<li>Aplicación accesible ya que solo requiere un teléfono celular</li>
-						<li>Sistema escalable para poder tratar varios tipos de fobias.</li>
-						<li>Entornos controlables y seguros.</li>
-						<li>Tecnología de Realidad Aumentada sin marcadores.</li>
-						<li>Permite grabar la sesiones y guardarlas en la nube (trazabilidad de la terapia).</li>
-						<li>Posibilidad de evolucionar a Realidad Virtual.</li>
-					</ul>
-				</p>				
+					<div style="width: 40%; float:left">
+						<p class="modelo" style="margin-top:22%">
+							<span class="texto-naranja">Valor</span> 
+							<span class="texto-negro">Agregado</span>
+						</p>
+
+					</div>
+					
+					<div style="width: 60%; float:right">
+						<p class="descripcion texto-negro">
+							<ul style="list-style :none;"  >					
+								<li>Aplicación fácilmente accesible ya que solo requiere un teléfono celular</li>
+								<br>
+								<li>Sistema escalable para poder tratar varios tipos de fobias.</li>
+								<br>
+								<li>Entornos controlables y seguros.</li>
+								<br>
+								<li>Tecnología de Realidad Aumentada sin marcadores.</li>
+								<br>
+								<li>Permite grabar la sesiones y guardarlas en la nube (trazabilidad de la terapia).</li>
+								<br>
+								<li>Posibilidad de evolucionar a Realidad Virtual.</li>
+							</ul>
+						</p>					
+					</div>				
+							
 				</div>
 			</article>
 			
@@ -117,7 +131,7 @@
 					}
 					</style>
 			 <!-- <model-viewer> HTML element -->
-				<model-viewer src="media/Horse.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral" poster="media/poster.webp" shadow-intensity="2.9" autoplay>
+				<model-viewer src="media/Horse.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral" poster="media/posterCaballo.webp" shadow-intensity="2.9" autoplay>
 					<div class="progress-bar hide" slot="progress-bar">
 						<div class="update-bar"></div>
 					</div>
@@ -135,14 +149,18 @@
 
 
 			<article class="slide">
-				<div class="informacion-producto">
-					<p class="modelo">
-						<span class="texto-naranja">NikeCourt</span> 
-						<span class="texto-negro">Air</span>
-					</p>
-					<p class="descripcion texto-negro">Lorem, ipsum dolor.</p>
-					<p class="precio">2,800</p>
-				</div>
+				<model-viewer bounds="tight" src="media/spider.gltf" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral" poster="media/spiderposter.webp" shadow-intensity="1" autoplay>
+
+					<div class="progress-bar hide" slot="progress-bar">
+						<div class="update-bar"></div>
+					</div>
+					<button slot="ar-button" id="ar-button">
+						View in your space
+					</button>
+					<div id="ar-prompt">
+						<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+					</div>
+				</model-viewer>
 			</article>
 			<article class="slide">
 				<div class="informacion-producto">
