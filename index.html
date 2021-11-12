@@ -123,28 +123,33 @@
 		</section>
 
 		<section class="section productos" style="margin-right:auto">
-			<article class="slide" style="margin-right:auto">				
-				<style>
-					model-viewer {
-					  width: 800px;
-					  height: 600px;
-					}
-					</style>
-			 <!-- <model-viewer> HTML element -->
-				<model-viewer src="media/Horse.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral" poster="media/posterCaballo.webp" shadow-intensity="2.9" autoplay>
-					<div class="progress-bar hide" slot="progress-bar">
-						<div class="update-bar"></div>
-					</div>
-					<button slot="ar-button" id="ar-button">
-						View in your space
-					</button>
-					<div id="ar-prompt">
-						<img src="media/ar_hand_prompt.png">
-					</div>
-				  </model-viewer>  
-				  <script src="script.js"></script>
-				  <!-- Loads <model-viewer> for browsers: -->
-				  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+			<article class="slide" >	
+				
+				<div style="margin-right:auto">
+					<style>
+						model-viewer {
+						  width: 800px;
+						  height: 600px;
+						}
+						</style>
+				 <!-- <model-viewer> HTML element -->
+					<model-viewer src="media/Horse.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral" poster="media/posterCaballo.webp" shadow-intensity="2.9" autoplay>
+						<div class="progress-bar hide" slot="progress-bar">
+							<div class="update-bar"></div>
+						</div>
+						<button slot="ar-button" id="ar-button">
+							View in your space
+						</button>
+						<div id="ar-prompt">
+							<img src="media/ar_hand_prompt.png">
+						</div>
+					  </model-viewer>  
+					  <script src="script.js"></script>
+					  <!-- Loads <model-viewer> for browsers: -->
+					  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+				</div>
+				
 			</article>
 
 
